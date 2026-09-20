@@ -7,7 +7,7 @@ from flask_cors import CORS
 from datetime import datetime
 import sqlite3, os, secrets, string, hashlib, hmac
 
-app = Flask(__name__) CORS(app)
+app = Flask(__name__)CORS(app)
 DB   = "barxeysolo.db"
 SECRET = os.environ.get("API_SECRET", "changeme123")  # set in Railway env vars
 
